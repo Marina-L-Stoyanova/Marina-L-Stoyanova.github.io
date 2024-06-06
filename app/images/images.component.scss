@@ -1,0 +1,32 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.navbar {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.h6 {
+  margin: 0;
+}
+.image {
+  object-fit: cover;
+  left: 28px;
+  top: 186px;
+  position: absolute;
+  width: 502px;
+  height: 489px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 502px;
+  max-height: 489px;
+  flex-shrink: 0;
+}

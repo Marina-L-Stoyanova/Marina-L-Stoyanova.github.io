@@ -1,0 +1,26 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.navbar {
+  height: max-content;
+  min-width: min-content;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.h6 {
+  margin: 0;
+}
+.date-picker {
+  left: 0.7368935032895465px;
+  top: 58.105263157894846px;
+  position: absolute;
+  height: max-content;
+  min-width: 120px;
+}
