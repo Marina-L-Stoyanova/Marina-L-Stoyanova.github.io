@@ -37,8 +37,12 @@ jobs:
     - run: npm run build
     - run: npm run test -- --watch=false --browsers ChromeHeadless
 
-- name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./marina-l-stoyanova.github.io/src  # Change this to your desired location
+  deploy: 
+        name: github-pages
+        runs-on: ubuntu-latest
+        needs: build
+        steps:
+        - uses: peaceiris/actions-gh-pages@v3
+        - with:
+          - github_token: ${{ secrets.GITHUB_TOKEN }}
+          - publish_dir: ./marina-l-stoyanova.github.io/src  # Change this to your desired location
